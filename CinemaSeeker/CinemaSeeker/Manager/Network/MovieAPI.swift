@@ -107,4 +107,8 @@ struct MovieAPI {
         return movieURL(endpoint: .Similar(movieId: movieId), parameters: nil)
     }
     
+    static func image(imagePath: String) -> URL {
+        return imageURL(endpoint: .Images(imagePath: imagePath), parameters: nil)
+    }
+    
 }

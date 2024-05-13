@@ -12,7 +12,6 @@ struct Fetching {
     private static let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
     
     static func getData<T:Codable>(withRequest url: URLRequest,completion: @escaping(Result<T,CSError>) -> Void) {
-        print(url)
         let task = session.dataTask(with: url) { data, response, error in
             
             if let anyError = error {

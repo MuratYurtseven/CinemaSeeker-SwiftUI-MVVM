@@ -22,3 +22,4 @@ struct Movie: Codable ,Hashable{
     let vote_count: Int?
 
 }
+

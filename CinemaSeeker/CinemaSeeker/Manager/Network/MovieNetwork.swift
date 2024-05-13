@@ -21,6 +21,12 @@ class MovieNetwork {
         Fetching.getData(withRequest: request, completion: completion)
     }
     
+    func fetchTopRatedList(completion:@escaping(Result<Movies,CSError>) -> Void){
+        let url = MovieAPI.topRatdListUrl
+        let request = URLRequest(url: url)
+        Fetching.getData(withRequest: request, completion: completion)
+    }
+    
     func fetchUpcomingList(completion: @escaping(Result<Movies,CSError>) -> Void) {
         let url = MovieAPI.upcomingListUrl
         let request = URLRequest(url: url)
