@@ -16,4 +16,7 @@ extension Color {
     static let textBase = Color("TextColor")
     static let textBase2 = Color("TextColor2")
     static let textStrokeBase = Color("TextStrokeColor")
+    static let genreDarkBackground = Color("GenreDarkColor")
+    static let genreMediumBackground = Color("GenreMediumColor")
+    static let genreLightBackground = Color("GenreLightColor")
 }

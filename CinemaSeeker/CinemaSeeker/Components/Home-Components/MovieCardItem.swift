@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct MovieCardItem: View {
+    @EnvironmentObject var homeToDetail: ChangePage
     var movie:Movie
     @State var isAnimating: Bool = false
     var body: some View {
         VStack{
-            if let imagePath = movie.poster_path, let title = movie.title,let releaseDate = movie.release_date{
-                ImageItem(imagePath: imagePath)
+            if let imagePath = movie.poster_path, let title = movie.title,let releaseDate = movie.release_date,let movieId = movie.id{
+                ImageItem(imagePath: imagePath, movieId: movieId)
                     .scaledToFit()
                     .clipShape(.rect(cornerRadius: 16))
                     .overlay{
@@ -24,6 +25,15 @@ struct MovieCardItem: View {
         .onAppear(perform: {
             isAnimating = true
         })
+        .onTapGesture {
+            if let id = movie.id{
+                withAnimation(.linear(duration: 1)) {
+                    self.homeToDetail.showingHomeView = false
+                    self.homeToDetail.showingDetailView = true
+                    self.homeToDetail.selecetedMovieId = id
+                }}
+            
+        }
     }
     
     @ViewBuilder
@@ -64,4 +74,5 @@ struct MovieCardItem: View {
 
 #Preview {
     MovieCardItem(movie: sampleMovie)
+        .environmentObject(ChangePage())
 }

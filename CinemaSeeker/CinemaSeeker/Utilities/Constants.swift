@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+
+let columnSpacing: CGFloat = 10
+let rowSpacing: CGFloat = 5
+var gridLayout: [GridItem] {
+    return Array(repeating: GridItem(.flexible(),spacing: rowSpacing), count: 2)
+}
+
 let sampleMovie: Movie = Movie(
     adult: true,
     backdrop_path: "/qGJASuD3fs9ZBxuEZoxCLVidVq8.jpg",

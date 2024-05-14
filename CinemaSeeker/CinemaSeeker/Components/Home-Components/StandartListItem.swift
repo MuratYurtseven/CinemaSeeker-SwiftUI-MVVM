@@ -11,8 +11,8 @@ struct StandartListItem: View {
     var movie: Movie
     var body: some View {
         VStack(spacing:0){
-            if let imagePath = movie.poster_path{
-                ImageItem(imagePath: imagePath)
+            if let imagePath = movie.poster_path,let movieId = movie.id{
+                ImageItem(imagePath: imagePath, movieId: movieId)
                     .frame(width: 100,height: 145)
                     .clipShape(.rect(cornerRadius: 16))
             }

@@ -12,6 +12,7 @@ struct CinemaSeekerApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(ChangePage())
         }
     }
 }

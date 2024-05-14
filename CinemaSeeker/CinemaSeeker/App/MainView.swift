@@ -25,6 +25,14 @@ struct MainView: View {
                         Text("Search")}
                 }
             
+            FavouritesView()
+                .tabItem {
+                    VStack{
+                        Image(systemName: "star.fill")
+                        Text("FavouriteS")
+                    }
+                }
+            
             //MARK: - TabItem(WatchList)
             WatchListView()
                 .tabItem {
@@ -39,4 +47,5 @@ struct MainView: View {
 
 #Preview {
     MainView()
+        .environmentObject(ChangePage())
 }

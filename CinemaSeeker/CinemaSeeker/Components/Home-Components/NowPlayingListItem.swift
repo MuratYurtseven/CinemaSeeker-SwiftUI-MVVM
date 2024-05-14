@@ -13,8 +13,8 @@ struct NowPlayingListItem: View {
     //MARK: - BODY
     var body: some View {
         HStack(spacing:15) {
-            if let imagePath = movie.backdrop_path,let title = movie.title,let voteAverage = movie.vote_average,let releaseDate = movie.release_date{
-                ImageItem(imagePath: imagePath)
+            if let imagePath = movie.backdrop_path,let title = movie.title,let voteAverage = movie.vote_average,let releaseDate = movie.release_date,let movieId = movie.id{
+                ImageItem(imagePath: imagePath, movieId: movieId)
                     .scaledToFit()
                     .frame(width: 175,height: 100)
                     .clipShape(.rect(cornerRadius: 16))

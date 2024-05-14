@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GenreItem: View {
+    @EnvironmentObject var homeToGenreView: ChangePage
     var genre: Genre
     var body: some View {
         VStack(spacing:0){
@@ -27,6 +28,12 @@ struct GenreItem: View {
                     .stroke(Color.textBase2,lineWidth: 2)
             )
         }//:VSTACK
+        .onTapGesture {
+            withAnimation(.easeIn(duration: 1.5)) {
+                self.homeToGenreView.showingHomeView = false
+                self.homeToGenreView.showingGenreView = true
+                self.homeToGenreView.selecetedGenreId = genre.id}
+        }
         .padding(.horizontal,5)
         .padding(.vertical,10)
     }

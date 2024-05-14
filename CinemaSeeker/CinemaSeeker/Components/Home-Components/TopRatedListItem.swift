@@ -14,8 +14,8 @@ struct TopRatedListItem: View {
     //MARK: - BODY
     var body: some View {
         ZStack {
-            if let imagePath = movie.poster_path{
-                ImageItem(imagePath: imagePath)
+            if let imagePath = movie.poster_path,let movieId = movie.id{
+                ImageItem(imagePath: imagePath, movieId: movieId)
                     .scaledToFit()
                     .frame(width: 140,height: 210)
                     .clipShape(.rect(cornerRadius: 16))
