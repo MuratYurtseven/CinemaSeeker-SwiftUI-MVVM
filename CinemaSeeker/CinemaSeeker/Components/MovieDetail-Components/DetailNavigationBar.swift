@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailNavigationBar: View {
     @EnvironmentObject var detailToHome: ChangePage
     @State var isTapped: Bool = false
+    var movie: MovieDetail
     var body: some View {
         HStack(spacing:4){
             Button(action: {
@@ -29,6 +30,22 @@ struct DetailNavigationBar: View {
             Spacer()
             Button(action: {
                 self.isTapped.toggle()
+                if
+                    let id = movie.id,
+                    let title = movie.title,
+                    let imagePath = movie.poster_path,
+                    let tagline = movie.tagline{
+                    let watchListMovie = WatchListMovie(
+                        id: id,
+                        title: title,
+                        imagePath: imagePath,
+                        tagline: tagline)
+                    PersistanceManager.updateWatchListWith(movie: watchListMovie, actionType: .add) { error in
+                        print(error)
+                    }
+                }
+                    
+                    
             }, label: {
                 Image(systemName: isTapped ? "bookmark.fill": "bookmark")
                     .foregroundStyle(Color.textBase)
@@ -41,6 +58,6 @@ struct DetailNavigationBar: View {
 }
 
 #Preview {
-    DetailNavigationBar()
+    DetailNavigationBar(movie: sampleMovieDetail)
         .environmentObject(ChangePage())
 }

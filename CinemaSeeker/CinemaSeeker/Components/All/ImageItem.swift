@@ -19,6 +19,7 @@ struct ImageItem: View {
             if let uiImage = imageNetwork.image {
                 Image(uiImage: uiImage)
                     .resizable()
+                    .scaledToFit()
                     .onTapGesture {
                         if let id = movieId{
                             withAnimation(.linear(duration: 1.75)) {

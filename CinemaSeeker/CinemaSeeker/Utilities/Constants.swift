@@ -52,4 +52,7 @@ let sampleMovieDetail: MovieDetail = MovieDetail(
     vote_average: 6.516,
     vote_count: 394)
 
+let sampleFavourite = FavouriteMovie(id: 1, title: "GodFather", imagePath: "hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg", voteRate: 6.784545)
+
+let sampleWatchList = WatchListMovie(id: 1, title: "GodFather", imagePath: "hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg", tagline: "some thing happen in any time When what you think there is no hope to live in this world forever.")
 

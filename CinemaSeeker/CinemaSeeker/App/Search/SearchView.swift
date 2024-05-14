@@ -14,7 +14,15 @@ struct SearchView: View {
     @State private var isComplete: Bool = false
     var body: some View {
         if searchToDetail.showingSearchView == true {
-            VStack{
+            VStack(alignment: .leading,spacing:5){
+                NavigationBarView()
+                    .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    .background(BackgroundStyle.navigationBackground)
+                    .clipShape(.rect(cornerRadius: 25))
+                    .shadow(color: .black.opacity(0.085), radius: 5, x: 0, y: 10)
+                TitleView(title: "Search")
+                    .padding(.horizontal,10)
+                
                 TextField("Search", text: $searchTerm) {
                     viewModel.getMovies(query: searchTerm)
                     withAnimation(.linear(duration: 1)) {
@@ -55,8 +63,10 @@ struct SearchView: View {
                 }//:VSTACK
                 Spacer()
             }//:VSTACK
-            .background(BackgroundStyle.background)}
-        else if 
+            .background(BackgroundStyle.background)
+            .ignoresSafeArea(.all,edges:.top)
+        }
+        else if
             searchToDetail.showingDetailView == true &&
                 searchToDetail.selecetedMovieId != nil {
             DetailView(movieId: searchToDetail.selecetedMovieId!)
@@ -67,4 +77,5 @@ struct SearchView: View {
 
 #Preview {
     SearchView()
+        .environmentObject(ChangePage())
 }

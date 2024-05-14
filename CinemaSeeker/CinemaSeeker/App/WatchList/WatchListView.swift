@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct WatchListView: View {
+    @StateObject var viewModel = WatchListViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading,spacing: 20) {
+            NavigationBarView()
+                .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .background(BackgroundStyle.navigationBackground)
+                .clipShape(.rect(cornerRadius: 25))
+                .shadow(color: .black.opacity(0.085), radius: 5, x: 0, y: 10)
+            
+            TitleView(title: "Watch List")
+                .padding(.horizontal,10)
+
+            WatchListList(watchMovies: viewModel.watchlistMovies)
+
+        }
+        .background(BackgroundStyle.background)
+        .ignoresSafeArea(.all,edges: .top)
+        .onAppear(perform: {
+            viewModel.getWatchListMovies()
+        })
     }
 }
 

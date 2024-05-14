@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct FavouritesView: View {
+    @StateObject var viewModel = FavouritesViewModel()
     var body: some View {
-        Text("Favourites")
+        VStack (alignment:.leading,spacing: 20){
+            NavigationBarView()
+                .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .background(BackgroundStyle.navigationBackground)
+                .clipShape(.rect(cornerRadius: 25))
+                .shadow(color: .black.opacity(0.085), radius: 5, x: 0, y: 10)
+            TitleView(title: "Favourites")
+                .padding(.horizontal,10)
+            FavouriteList(favouriteMovies: viewModel.favouritesMovies, viewModel: viewModel)
+        }
+        .background(BackgroundStyle.background)
+        .ignoresSafeArea(.all,edges: .top)
+        .onAppear(perform: {
+            viewModel.getFavouriteMovies()
+        })
+
     }
 }
 

@@ -60,7 +60,15 @@ struct Backdrop: View {
                     Button(action: {
                         self.isTapped = false
                         self.isRated = true
-                        print("Saved: \(voteRate)")
+                        if
+                            let id = movieDetail.id,
+                            let title = movieDetail.title,
+                            let imagePath = movieDetail.poster_path{
+                            let favourite = FavouriteMovie(id:id, title: title, imagePath: imagePath, voteRate: voteRate)
+                            PersistanceManager.updateFavouritesWith(movie: favourite, actionType: .add) { error in
+                                print(error)
+                            }
+                        }
                     }, label: {
                         Text("Save")
                     })

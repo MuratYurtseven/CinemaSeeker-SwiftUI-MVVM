@@ -12,12 +12,13 @@ struct DetailView: View {
     var movieId: Int
     var body: some View {
         VStack {
-            DetailNavigationBar()
+            if let movieDetail = viewModel.movieDetail{
+            DetailNavigationBar(movie: movieDetail)
                 .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
                 .background(BackgroundStyle.navigationBackground)
                 .clipShape(.rect(cornerRadius: 25))
                 .shadow(color: .black.opacity(0.085), radius: 5, x: 0, y: 10)
-            if let movieDetail = viewModel.movieDetail{
+            
                 Backdrop(movieDetail: movieDetail)
                     .overlay(
                         Frontdrop(movie:movieDetail)
