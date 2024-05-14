@@ -21,8 +21,9 @@ struct ImageItem: View {
                     .resizable()
                     .onTapGesture {
                         if let id = movieId{
-                            withAnimation(.linear(duration: 1)) {
+                            withAnimation(.linear(duration: 1.75)) {
                                 self.homeToDetail.showingHomeView = false
+                                self.homeToDetail.showingSearchView = false
                                 self.homeToDetail.showingDetailView = true
                                 self.homeToDetail.selecetedMovieId = id
                             }}}

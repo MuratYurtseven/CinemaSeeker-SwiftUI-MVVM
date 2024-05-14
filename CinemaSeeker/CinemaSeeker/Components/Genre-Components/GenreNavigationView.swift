@@ -12,7 +12,7 @@ struct GenreNavigationView: View {
     var body: some View {
         HStack {
             Button(action: {
-                withAnimation(.easeIn(duration: 1.5)) {
+                withAnimation(.easeIn(duration: 2)) {
                     genreToHome.showingHomeView = true
                     genreToHome.showingGenreView = false
                     genreToHome.selecetedGenreId = nil

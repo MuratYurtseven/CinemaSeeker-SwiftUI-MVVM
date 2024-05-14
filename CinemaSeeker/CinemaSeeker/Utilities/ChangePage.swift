@@ -9,6 +9,7 @@ import Foundation
 
 class ChangePage: ObservableObject {
     @Published var showingHomeView: Bool = true
+    @Published var showingSearchView: Bool = true
     
     @Published var showingDetailView: Bool = false
     @Published var selecetedMovieId: Int? = nil

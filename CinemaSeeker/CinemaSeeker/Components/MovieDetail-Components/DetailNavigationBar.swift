@@ -13,8 +13,9 @@ struct DetailNavigationBar: View {
     var body: some View {
         HStack(spacing:4){
             Button(action: {
-                withAnimation(.linear(duration: 1)) {
+                withAnimation(.linear(duration: 2)) {
                     detailToHome.showingHomeView = true
+                    detailToHome.showingSearchView = true
                     detailToHome.showingDetailView = false
                     detailToHome.selecetedMovieId = nil
                 }

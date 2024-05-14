@@ -11,7 +11,6 @@ struct HomeView: View {
     @EnvironmentObject var homeToOthePage: ChangePage
     @StateObject var viewModel = HomeViewModel()
     @State var number = 0
-    @State var isAppear: Bool = false
     var body: some View {
         VStack {
             if homeToOthePage.showingHomeView == true {
@@ -26,11 +25,11 @@ struct HomeView: View {
                     ScrollView(.vertical,showsIndicators: false){
                         GenreList(genres: viewModel.genres)
                             .padding(.leading,10)
-                            .opacity(isAppear ? 1 : 0)
+                            
                         
                         MovieCardList(movies: viewModel.upcomingMovies)
                             .padding(.bottom,35)
-                            .opacity(isAppear ? 1: 0)
+                            
                         
                         VStack (alignment: .leading){
                             TitleView(title: "Top Rated Movies")
@@ -38,7 +37,7 @@ struct HomeView: View {
                             TopRatedList(movies: viewModel.topRatedMovies)
                         }//:VSTACK
                         .padding(.bottom,35)
-                        .opacity(isAppear ? 1: 0)
+                        
                         
                         VStack(alignment:.leading){
                             TitleView(title: "Now Playing Movies")
@@ -46,7 +45,7 @@ struct HomeView: View {
                             NowPlayingList(movies: viewModel.nowPlayingMovies)
                         }//:VSTACK
                         .padding(.bottom,35)
-                        .opacity(isAppear ? 1 :0)
+                        
                         
                         
                         VStack(alignment:.leading){
@@ -55,7 +54,7 @@ struct HomeView: View {
                             StandartList(movies: viewModel.popularMovies)
                         }//:VSTACK
                         .padding(.bottom,35)
-                        .opacity(isAppear ? 1 :0)
+                        
                         
                         VStack(alignment:.leading){
                             TitleView(title: "Upcoming Movies")
@@ -63,19 +62,9 @@ struct HomeView: View {
                             StandartList(movies: viewModel.upcomingMovies)
                         }//:VSTACK
                         .padding(.bottom,35)
-                        .opacity(isAppear ? 1 :0)
+                        
                     }//:SCROLL
-                    .onAppear(perform: {
-                        withAnimation(.easeIn(duration: 0.1)){
-                            isAppear = true
-                        }
-                    })
-                    .onDisappear(perform: {
-                        withAnimation(.easeIn(duration: 0.1)){
-                            isAppear = false
-                        }
-                    })
-                }//:VSTACK
+                                    }//:VSTACK
             }//:ZSTACK
             .background(BackgroundStyle.background)
         .ignoresSafeArea(.all,edges: .top)
@@ -93,7 +82,7 @@ struct HomeView: View {
                 GenreView(genreId: homeToOthePage.selecetedGenreId!)
             }
         }//:VSTACK
-        .task {
+        .onAppear() {
             viewModel.getGenres()
             viewModel.getPopularMovies()
             viewModel.getTopRatedMovies()
