@@ -22,4 +22,4 @@ Movie Seeker - SwiftUI
   
 # Screenshots
 
-<img src="https://github.com/MuratYurtseven/MovieSeeker-SwiftUI-MVVM/assets/123903809/fb802f5b-bcb9-4bd6-939a-14c137aa8207" width="1440" height="900">  
+<img src="https://github.com/MuratYurtseven/MovieSeeker-SwiftUI-MVVM/assets/123903809/fb802f5b-bcb9-4bd6-939a-14c137aa8207" width="2880" height="1800">  
