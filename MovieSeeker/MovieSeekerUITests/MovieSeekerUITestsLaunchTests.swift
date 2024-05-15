@@ -1,5 +1,5 @@
 //
-//  CinemaSeekerUITestsLaunchTests.swift
+//  MovieSeekerUITestsLaunchTests.swift
 //  CinemaSeekerUITests
 //
 //  Created by Murat on 11.05.2024.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class CinemaSeekerUITestsLaunchTests: XCTestCase {
+final class MovieSeekerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

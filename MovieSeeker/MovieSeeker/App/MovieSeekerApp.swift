@@ -1,5 +1,5 @@
 //
-//  CinemaSeekerApp.swift
+//  MovieSeekerApp.swift
 //  CinemaSeeker
 //
 //  Created by Murat on 11.05.2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CinemaSeekerApp: App {
+struct MovieSeekerApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()

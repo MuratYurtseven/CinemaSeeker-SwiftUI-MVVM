@@ -15,6 +15,6 @@ class ChangePage: ObservableObject {
     @Published var selecetedMovieId: Int? = nil
     
     @Published var showingGenreView: Bool = false
-    @Published var selecetedGenreId: Int? = nil
+    @Published var selecetedGenre: Genre? = nil
     
 }

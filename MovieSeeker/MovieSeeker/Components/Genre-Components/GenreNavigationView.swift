@@ -15,7 +15,7 @@ struct GenreNavigationView: View {
                 withAnimation(.easeIn(duration: 2)) {
                     genreToHome.showingHomeView = true
                     genreToHome.showingGenreView = false
-                    genreToHome.selecetedGenreId = nil
+                    genreToHome.selecetedGenre = nil
                 }
             }, label: {
                 Image(systemName: "chevron.backward")

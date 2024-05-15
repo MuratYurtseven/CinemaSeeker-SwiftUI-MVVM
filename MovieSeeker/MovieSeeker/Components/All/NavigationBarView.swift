@@ -11,7 +11,7 @@ struct NavigationBarView: View {
     var body: some View {
         HStack {
             Spacer()
-            Text("Cinema")
+            Text("Movie")
                 .font(.titleMedium)
                 .fontWeight(.black)
                 .foregroundStyle(Color.textBase)

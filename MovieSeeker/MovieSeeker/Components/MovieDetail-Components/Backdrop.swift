@@ -12,6 +12,7 @@ struct Backdrop: View {
     @State var isTapped: Bool = false
     @State var isRated: Bool = false
     @State var voteRate: Double = 0
+    @State private var showAlert = false
     var body: some View {
         VStack{
             if let imagePath = movieDetail.backdrop_path,let voteRate = movieDetail.vote_average{
@@ -80,6 +81,7 @@ struct Backdrop: View {
             .background(BackgroundStyle.navigationBackground)
             .presentationDetents([.fraction(0.15)])
             .presentationDragIndicator(.hidden)
+            
         })
         
     }

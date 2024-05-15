@@ -77,9 +77,9 @@ struct HomeView: View {
             
             else if
                 homeToOthePage.showingGenreView == true &&
-                homeToOthePage.selecetedGenreId != nil
+                homeToOthePage.selecetedGenre != nil
             {
-                GenreView(genreId: homeToOthePage.selecetedGenreId!)
+                GenreView(genre: homeToOthePage.selecetedGenre!)
             }
         }//:VSTACK
         .onAppear() {

@@ -32,7 +32,7 @@ struct GenreItem: View {
             withAnimation(.easeIn(duration: 1.5)) {
                 self.homeToGenreView.showingHomeView = false
                 self.homeToGenreView.showingGenreView = true
-                self.homeToGenreView.selecetedGenreId = genre.id}
+                self.homeToGenreView.selecetedGenre = genre}
         }
         .padding(.horizontal,5)
         .padding(.vertical,10)

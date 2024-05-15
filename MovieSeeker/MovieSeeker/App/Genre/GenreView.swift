@@ -9,22 +9,30 @@ import SwiftUI
 
 struct GenreView: View {
     @StateObject var viewModel = GenreViewModel()
-    var genreId:Int
+    var genre: Genre
     var body: some View {
-        VStack {
+        VStack (alignment: .leading){
             GenreNavigationView()
+            if let name = genre.name{
+                TitleView(title: name)
+                    .padding(.horizontal,10)
+            }
+
             ScrollView(.vertical,showsIndicators: false){
                 GenreMovieList(movies: viewModel.moviesByGenre)
             }
         }
         .task {
-            self.viewModel.getMoviesWithGenreId(withGenreId: genreId)}
+            if let genreId = genre.id{
+                self.viewModel.getMoviesWithGenreId(withGenreId: genreId)
+            }
+        }
         
         .background(BackgroundStyle.background)
     }
 }
 
 #Preview {
-    GenreView(genreId: 37)
+    GenreView(genre: sampleGenre)
         .environmentObject(ChangePage())
 }

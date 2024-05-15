@@ -25,12 +25,12 @@
 		FB1D46072BF0FF1A00EAAE11 /* Casts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D46062BF0FF1A00EAAE11 /* Casts.swift */; };
 		FB1D46092BF0FF2E00EAAE11 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D46082BF0FF2E00EAAE11 /* Credit.swift */; };
 		FB1D460B2BF100F800EAAE11 /* MovieNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D460A2BF100F800EAAE11 /* MovieNetwork.swift */; };
-		FB6A75A72BEFF3A100D459D9 /* CinemaSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75A62BEFF3A100D459D9 /* CinemaSeekerApp.swift */; };
+		FB6A75A72BEFF3A100D459D9 /* MovieSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75A62BEFF3A100D459D9 /* MovieSeekerApp.swift */; };
 		FB6A75AB2BEFF3A200D459D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A75AA2BEFF3A200D459D9 /* Assets.xcassets */; };
 		FB6A75AE2BEFF3A200D459D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A75AD2BEFF3A200D459D9 /* Preview Assets.xcassets */; };
-		FB6A75B82BEFF3A200D459D9 /* CinemaSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75B72BEFF3A200D459D9 /* CinemaSeekerTests.swift */; };
-		FB6A75C22BEFF3A200D459D9 /* CinemaSeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75C12BEFF3A200D459D9 /* CinemaSeekerUITests.swift */; };
-		FB6A75C42BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75C32BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift */; };
+		FB6A75B82BEFF3A200D459D9 /* MovieSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75B72BEFF3A200D459D9 /* MovieSeekerTests.swift */; };
+		FB6A75C22BEFF3A200D459D9 /* MovieSeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75C12BEFF3A200D459D9 /* MovieSeekerUITests.swift */; };
+		FB6A75C42BEFF3A200D459D9 /* MovieSeekerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A75C32BEFF3A200D459D9 /* MovieSeekerUITestsLaunchTests.swift */; };
 		FBAA424A2BF25E8800A944BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA42492BF25E8800A944BA /* HomeViewModel.swift */; };
 		FBAA424C2BF2682800A944BA /* ImageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA424B2BF2682800A944BA /* ImageNetwork.swift */; };
 		FBAA424F2BF26A2100A944BA /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA424E2BF26A2100A944BA /* ImageItem.swift */; };
@@ -121,14 +121,14 @@
 		FB1D46082BF0FF2E00EAAE11 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		FB1D460A2BF100F800EAAE11 /* MovieNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetwork.swift; sourceTree = "<group>"; };
 		FB6A75A32BEFF3A100D459D9 /* CinemaSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB6A75A62BEFF3A100D459D9 /* CinemaSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSeekerApp.swift; sourceTree = "<group>"; };
+		FB6A75A62BEFF3A100D459D9 /* MovieSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeekerApp.swift; sourceTree = "<group>"; };
 		FB6A75AA2BEFF3A200D459D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6A75AD2BEFF3A200D459D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB6A75B32BEFF3A200D459D9 /* CinemaSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB6A75B72BEFF3A200D459D9 /* CinemaSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSeekerTests.swift; sourceTree = "<group>"; };
-		FB6A75BD2BEFF3A200D459D9 /* CinemaSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB6A75C12BEFF3A200D459D9 /* CinemaSeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSeekerUITests.swift; sourceTree = "<group>"; };
-		FB6A75C32BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSeekerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB6A75B32BEFF3A200D459D9 /* MovieSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6A75B72BEFF3A200D459D9 /* MovieSeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeekerTests.swift; sourceTree = "<group>"; };
+		FB6A75BD2BEFF3A200D459D9 /* MovieSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6A75C12BEFF3A200D459D9 /* MovieSeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeekerUITests.swift; sourceTree = "<group>"; };
+		FB6A75C32BEFF3A200D459D9 /* MovieSeekerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeekerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBAA42492BF25E8800A944BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FBAA424B2BF2682800A944BA /* ImageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetwork.swift; sourceTree = "<group>"; };
 		FBAA424E2BF26A2100A944BA /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 		FB1D45DF2BF0E35400EAAE11 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FB6A75A62BEFF3A100D459D9 /* CinemaSeekerApp.swift */,
+				FB6A75A62BEFF3A100D459D9 /* MovieSeekerApp.swift */,
 				FB1D45E42BF0E39100EAAE11 /* MainView.swift */,
 				FBAA42482BF25E7A00A944BA /* Home */,
 				FBAA42792BF2A23500A944BA /* Genre */,
@@ -309,8 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				FB6A75A32BEFF3A100D459D9 /* CinemaSeeker.app */,
-				FB6A75B32BEFF3A200D459D9 /* CinemaSeekerTests.xctest */,
-				FB6A75BD2BEFF3A200D459D9 /* CinemaSeekerUITests.xctest */,
+				FB6A75B32BEFF3A200D459D9 /* MovieSeekerTests.xctest */,
+				FB6A75BD2BEFF3A200D459D9 /* MovieSeekerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 		FB6A75B62BEFF3A200D459D9 /* MovieSeekerTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB6A75B72BEFF3A200D459D9 /* CinemaSeekerTests.swift */,
+				FB6A75B72BEFF3A200D459D9 /* MovieSeekerTests.swift */,
 			);
 			path = MovieSeekerTests;
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 		FB6A75C02BEFF3A200D459D9 /* MovieSeekerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FB6A75C12BEFF3A200D459D9 /* CinemaSeekerUITests.swift */,
-				FB6A75C32BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift */,
+				FB6A75C12BEFF3A200D459D9 /* MovieSeekerUITests.swift */,
+				FB6A75C32BEFF3A200D459D9 /* MovieSeekerUITestsLaunchTests.swift */,
 			);
 			path = MovieSeekerUITests;
 			sourceTree = "<group>";
@@ -534,7 +534,7 @@
 			);
 			name = CinemaSeekerTests;
 			productName = CinemaSeekerTests;
-			productReference = FB6A75B32BEFF3A200D459D9 /* CinemaSeekerTests.xctest */;
+			productReference = FB6A75B32BEFF3A200D459D9 /* MovieSeekerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FB6A75BC2BEFF3A200D459D9 /* CinemaSeekerUITests */ = {
@@ -552,7 +552,7 @@
 			);
 			name = CinemaSeekerUITests;
 			productName = CinemaSeekerUITests;
-			productReference = FB6A75BD2BEFF3A200D459D9 /* CinemaSeekerUITests.xctest */;
+			productReference = FB6A75BD2BEFF3A200D459D9 /* MovieSeekerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -578,7 +578,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB6A759E2BEFF3A100D459D9 /* Build configuration list for PBXProject "CinemaSeeker" */;
+			buildConfigurationList = FB6A759E2BEFF3A100D459D9 /* Build configuration list for PBXProject "MovieSeeker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -664,7 +664,7 @@
 				FBC424AA2BF3A33300496B3A /* DetailNavigationBar.swift in Sources */,
 				FBAA42712BF2901A00A944BA /* GenreList.swift in Sources */,
 				FB1D45E72BF0E39900EAAE11 /* HomeView.swift in Sources */,
-				FB6A75A72BEFF3A100D459D9 /* CinemaSeekerApp.swift in Sources */,
+				FB6A75A72BEFF3A100D459D9 /* MovieSeekerApp.swift in Sources */,
 				FBAA42882BF2B08600A944BA /* GenreNavigationView.swift in Sources */,
 				FBC424D92BF3F7EB00496B3A /* WatchListList.swift in Sources */,
 				FBAA42732BF29E0D00A944BA /* ChangePage.swift in Sources */,
@@ -706,7 +706,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6A75B82BEFF3A200D459D9 /* CinemaSeekerTests.swift in Sources */,
+				FB6A75B82BEFF3A200D459D9 /* MovieSeekerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,8 +714,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6A75C42BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift in Sources */,
-				FB6A75C22BEFF3A200D459D9 /* CinemaSeekerUITests.swift in Sources */,
+				FB6A75C42BEFF3A200D459D9 /* MovieSeekerUITestsLaunchTests.swift in Sources */,
+				FB6A75C22BEFF3A200D459D9 /* MovieSeekerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,7 +861,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CinemaSeeker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieSeeker/Preview Content\"";
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -891,7 +891,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CinemaSeeker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MovieSeeker/Preview Content\"";
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -918,15 +918,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = MovieSeeker;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.CinemaSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.MovieSeekerTests;
+				PRODUCT_NAME = MovieSeekerTests;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -938,15 +938,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(MovieSeeker)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.CinemaSeekerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.MovieSeekerTests;
+				PRODUCT_NAME = MovieSeekerTests;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -963,12 +963,12 @@
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.CinemaSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.MovieSeekerUITests;
+				PRODUCT_NAME = MovieSeekerUITests;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CinemaSeeker;
+				TEST_TARGET_NAME = MovieSeeker;
 			};
 			name = Debug;
 		};
@@ -981,19 +981,19 @@
 				DEVELOPMENT_TEAM = 29LG774JBH;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.CinemaSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deneme.MovieSeekerUITests;
+				PRODUCT_NAME = MovieSeekerUITests;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CinemaSeeker;
+				TEST_TARGET_NAME = MovieSeeker;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB6A759E2BEFF3A100D459D9 /* Build configuration list for PBXProject "CinemaSeeker" */ = {
+		FB6A759E2BEFF3A100D459D9 /* Build configuration list for PBXProject "MovieSeeker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB6A75C52BEFF3A200D459D9 /* Debug */,
