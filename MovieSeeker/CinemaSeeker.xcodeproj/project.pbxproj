@@ -298,9 +298,9 @@
 		FB6A759A2BEFF3A100D459D9 = {
 			isa = PBXGroup;
 			children = (
-				FB6A75A52BEFF3A100D459D9 /* CinemaSeeker */,
-				FB6A75B62BEFF3A200D459D9 /* CinemaSeekerTests */,
-				FB6A75C02BEFF3A200D459D9 /* CinemaSeekerUITests */,
+				FB6A75A52BEFF3A100D459D9 /* MovieSeeker */,
+				FB6A75B62BEFF3A200D459D9 /* MovieSeekerTests */,
+				FB6A75C02BEFF3A200D459D9 /* MovieSeekerUITests */,
 				FB6A75A42BEFF3A100D459D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB6A75A52BEFF3A100D459D9 /* CinemaSeeker */ = {
+		FB6A75A52BEFF3A100D459D9 /* MovieSeeker */ = {
 			isa = PBXGroup;
 			children = (
 				FB1D45DF2BF0E35400EAAE11 /* App */,
@@ -326,7 +326,7 @@
 				FB6A75AA2BEFF3A200D459D9 /* Assets.xcassets */,
 				FB6A75AC2BEFF3A200D459D9 /* Preview Content */,
 			);
-			path = CinemaSeeker;
+			path = MovieSeeker;
 			sourceTree = "<group>";
 		};
 		FB6A75AC2BEFF3A200D459D9 /* Preview Content */ = {
@@ -337,21 +337,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FB6A75B62BEFF3A200D459D9 /* CinemaSeekerTests */ = {
+		FB6A75B62BEFF3A200D459D9 /* MovieSeekerTests */ = {
 			isa = PBXGroup;
 			children = (
 				FB6A75B72BEFF3A200D459D9 /* CinemaSeekerTests.swift */,
 			);
-			path = CinemaSeekerTests;
+			path = MovieSeekerTests;
 			sourceTree = "<group>";
 		};
-		FB6A75C02BEFF3A200D459D9 /* CinemaSeekerUITests */ = {
+		FB6A75C02BEFF3A200D459D9 /* MovieSeekerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				FB6A75C12BEFF3A200D459D9 /* CinemaSeekerUITests.swift */,
 				FB6A75C32BEFF3A200D459D9 /* CinemaSeekerUITestsLaunchTests.swift */,
 			);
-			path = CinemaSeekerUITests;
+			path = MovieSeekerUITests;
 			sourceTree = "<group>";
 		};
 		FBAA42482BF25E7A00A944BA /* Home */ = {

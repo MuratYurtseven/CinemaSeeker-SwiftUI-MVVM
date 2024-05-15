@@ -33,6 +33,12 @@ struct WatchListItem: View {
                     .fontWeight(.bold)
                     .foregroundStyle(Color.textBase)
                 
+                Text("Delete")
+                    .font(.detailBase)
+                    .fontWeight(.light)
+                    .foregroundStyle(Color.textBase2)
+                    .multilineTextAlignment(.center)
+                
             }//:VSTACK
         }//:HSTACK
         .padding(.vertical,10)

@@ -32,7 +32,13 @@ struct FavouriteMovieItem: View {
                         .fontWeight(.heavy)
                         .foregroundStyle(Color.star)
                 }//:HSTACK
+                Text("Update/Delete")
+                    .font(.detailBase)
+                    .fontWeight(.light)
+                    .foregroundStyle(Color.textBase2)
+                    .multilineTextAlignment(.center)
             }//:VSTACK
+            
         }//:HSTACK
         .padding(.vertical,10)
         .padding(.horizontal,10)
