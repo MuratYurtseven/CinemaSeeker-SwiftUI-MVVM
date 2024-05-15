@@ -13,7 +13,7 @@ Movie Seeker - SwiftUI
 - Generic Persistance Layout
 - Error Handling
 - View Components
-- Image Cacheing
+- Image Caching
 - User Defaults
 - Formatter(Double)
 - Extensions(Color,Font)
@@ -21,3 +21,5 @@ Movie Seeker - SwiftUI
 - Add WatchList
   
 # Screenshots
+
+<img src="https://github.com/MuratYurtseven/MovieSeeker-SwiftUI-MVVM/assets/123903809/fb802f5b-bcb9-4bd6-939a-14c137aa8207" width="1440" height="900">  
